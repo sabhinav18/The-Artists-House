@@ -8,7 +8,7 @@ export default function Services() {
     <section id="services" className="relative py-28 md:py-36 bg-black-soft">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionTitle
-          number="02"
+          // number="02"
           label="Services"
           title="What we create"
           subtitle="From sound and screens to brands and digital experiences — we bring every creative idea to life."

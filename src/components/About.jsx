@@ -58,27 +58,30 @@ export default function About() {
 
         <div className="order-1 lg:order-2">
           <div className="flex items-center gap-3 mb-5 text-gold text-xs tracking-[0.3em] uppercase">
-            <span>01</span>
-            <span className="h-px w-8 bg-gold/60" />
+            {/* <span>01</span> */}
+            {/* <span className="h-px w-8 bg-gold/60" /> */}
             <span>About Us</span>
           </div>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.08] text-white">
             We are
             <br />
-            The Artist House.
+            The Artists House.
           </h2>
           <p className="mt-6 text-white/60 text-base md:text-lg leading-relaxed max-w-lg">
-            The Artist House is a multidisciplinary creative studio where ideas,
+            {/* The Artists House is a multidisciplinary creative studio where ideas,
             technology and artistic expression come together. We work across
             audio, video, branding, marketing, social media, graphic design and
-            web development.
+            web development. */}
+            The Artists house in an end-to-end creative partner for artists, creators, & breands. We bring together production, content, branding, marketing & digital solutions to take an idea from concept to execution … , And beyond.
           </p>
 
           <div className="mt-8 relative pl-6 border-l border-gold/50 max-w-lg">
             <p className="font-display text-2xl md:text-3xl text-white leading-snug">
-              "We don't just create content.
+              {/* "We don't just create content. */}
+              CREATE - PRODUCE
               <br />
-              We create experiences."
+              {/* We create experiences." */}
+              PROMOTE - GROW
             </p>
           </div>
 

@@ -9,7 +9,7 @@ export default function Clients() {
     <section id="clients" className="relative py-24 md:py-32 bg-black border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6 md:px-10 mb-14">
         <SectionTitle
-          number="04"
+          // number="04"
           label="Clients"
           title="Trusted by creatives, brands & visionaries."
           align="center"

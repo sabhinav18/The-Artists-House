@@ -91,11 +91,14 @@ export default function Contact() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-gold" aria-hidden="true" />
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 81716 75175</span>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin size={18} className="text-gold" aria-hidden="true" />
-                <span>India</span>
+                {/* <span>India</span> */}
+                <span>
+                  3rd Floor, Studio Block, Bandra West <br /> Mumbai 400050, India
+                </span>
               </li>
             </ul>
 

@@ -2,7 +2,7 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      "The Artist House transformed our idea into something far beyond what we imagined. The attention to detail and creative direction were exceptional.",
+      "The Artists House transformed our idea into something far beyond what we imagined. The attention to detail and creative direction were exceptional.",
     name: "Aarav Mehta",
     role: "Founder, Creative Brand",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300&auto=format&fit=crop",

@@ -59,7 +59,7 @@ export default function Navbar() {
             <span className="font-display leading-none">
               <span className="block text-[10px] tracking-[0.35em] text-white/60">THE</span>
               <span className="block text-lg md:text-xl font-semibold tracking-wide text-white">
-                ARTIST HOUSE
+                ARTISTS HOUSE
               </span>
             </span>
           </a>
@@ -119,7 +119,7 @@ export default function Navbar() {
             aria-modal="true"
           >
             <div className="flex items-center justify-between px-6 py-5">
-              <span className="font-display text-lg text-white">THE ARTIST HOUSE</span>
+              <span className="font-display text-lg text-white">THE ARTISTS HOUSE</span>
               <button onClick={() => setOpen(false)} aria-label="Close menu" className="text-white">
                 <X size={26} />
               </button>

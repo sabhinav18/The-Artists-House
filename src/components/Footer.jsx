@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-4 gap-12 pb-16">
           <div className="md:col-span-2">
-            <p className="font-display text-2xl text-white mb-4">THE ARTIST HOUSE</p>
+            <p className="font-display text-2xl text-white mb-4">THE ARTISTS HOUSE</p>
             <p className="text-white/50 text-sm max-w-xs leading-relaxed">
               Creating stories. Building brands. Shaping experiences.
             </p>
@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
-          <p>© 2026 The Artist House. All Rights Reserved.</p>
+          <p>© 2026 The Artists House. All Rights Reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-gold transition-colors">
               Privacy Policy
