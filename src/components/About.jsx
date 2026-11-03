@@ -1,21 +1,37 @@
+
+
+
+
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { motion, useInView, animate } from "framer-motion";
 
 function Counter({ to, suffix = "" }) {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, (v) => Math.floor(v));
+
+  const inView = useInView(ref, {
+    once: true,
+    amount: 0.2,
+  });
+
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
     if (!inView) return;
-    const controls = animate(count, to, { duration: 1.6, ease: "easeOut" });
-    const unsub = rounded.on("change", (v) => setDisplay(v));
-    return () => {
-      controls.stop();
-      unsub();
-    };
+
+    const controls = animate(0, to, {
+      duration: 1.6,
+      ease: "easeOut",
+
+      onUpdate: (latest) => {
+        setDisplay(Math.floor(latest));
+      },
+
+      onComplete: () => {
+        setDisplay(to);
+      },
+    });
+
+    return () => controls.stop();
   }, [inView, to]);
 
   return (
@@ -35,9 +51,10 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-28 md:py-36 bg-black">
+    <section id="about" className="relative py-16 md:py-24 bg-black">
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
-        <motion.div
+
+        {/* <motion.div
           initial={{ opacity: 0, scale: 1.04 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -46,41 +63,80 @@ export default function About() {
         >
           <div className="relative aspect-[4/5] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1400&auto=format&fit=crop"
+              src="/img.PNG"
               alt="Creative director reviewing footage in an edit suite"
               className="w-full h-full object-cover"
               loading="lazy"
             />
+
             <div className="absolute inset-0 border border-gold/25" />
           </div>
-          <div className="absolute -bottom-6 -right-6 hidden md:block w-32 h-32 border border-gold/40" aria-hidden="true" />
+          
+
+          <div
+            className="absolute -bottom-6 -right-6 hidden md:block w-32 h-32 border border-gold/40"
+            aria-hidden="true"
+          />
+        </motion.div> */}
+
+        <motion.div
+          initial={{ opacity: 0, scale: 1.04 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          className="relative order-2 lg:order-1"
+        >
+          
+          <div className="relative aspect-[4/5] w-full flex items-center justify-center">
+
+            
+            <div className="relative w-full aspect-[16/10]">
+
+              <img
+                src="/img.PNG"
+                alt="The Artists House creative studio"
+                className="absolute inset-0 w-full h-full object-cover object-center"
+                loading="lazy"
+              />
+
+              
+              <div className="absolute inset-0 border border-gold/25 pointer-events-none" />
+
+              
+              <div
+                className="absolute -bottom-6 -right-6 hidden md:block w-32 h-32 border border-gold/40 pointer-events-none"
+                aria-hidden="true"
+              />
+
+            </div>
+          </div>
         </motion.div>
 
+
+
         <div className="order-1 lg:order-2">
+
           <div className="flex items-center gap-3 mb-5 text-gold text-xs tracking-[0.3em] uppercase">
-            {/* <span>01</span> */}
-            {/* <span className="h-px w-8 bg-gold/60" /> */}
             <span>About Us</span>
           </div>
+
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.08] text-white">
             We are
             <br />
             The Artists House.
           </h2>
+
           <p className="mt-6 text-white/60 text-base md:text-lg leading-relaxed max-w-lg">
-            {/* The Artists House is a multidisciplinary creative studio where ideas,
-            technology and artistic expression come together. We work across
-            audio, video, branding, marketing, social media, graphic design and
-            web development. */}
-            The Artists house in an end-to-end creative partner for artists, creators, & breands. We bring together production, content, branding, marketing & digital solutions to take an idea from concept to execution … , And beyond.
+            The Artists house in an end-to-end creative partner for artists,
+            creators, & brands. We bring together production, content,
+            branding, marketing & digital solutions to take an idea from
+            concept to execution … , And beyond.
           </p>
 
           <div className="mt-8 relative pl-6 border-l border-gold/50 max-w-lg">
             <p className="font-display text-2xl md:text-3xl text-white leading-snug">
-              {/* "We don't just create content. */}
               CREATE - PRODUCE
               <br />
-              {/* We create experiences." */}
               PROMOTE - GROW
             </p>
           </div>
@@ -91,12 +147,14 @@ export default function About() {
                 <p className="font-display text-3xl md:text-4xl text-gold">
                   <Counter to={s.value} suffix={s.suffix} />
                 </p>
+
                 <p className="mt-1 text-xs md:text-sm text-white/50 uppercase tracking-wide">
                   {s.label}
                 </p>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
