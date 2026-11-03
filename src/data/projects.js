@@ -97,6 +97,17 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Roots of Bharat",
+    category: "Video",
+    type: "Brand Film",
+    description:
+      "A cinematic brand film capturing India's culture, craftsmanship, and heritage through compelling visual storytelling.",
+    image:
+      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1400&auto=format&fit=crop",
+    size: "wide",
+  },
+  {
+    id: 3,
     title: "Swarna Studio",
     category: "Branding",
     type: "Brand Identity",
@@ -107,7 +118,7 @@ export const projects = [
     size: "wide",
   },
 {
-  id: 3,
+  id: 4,
   title: "The Style Edit",
   category: "Social Media",
   type: "Social Media Campaign",
@@ -118,7 +129,7 @@ export const projects = [
   size: "normal",
 },
   {
-    id: 4,
+    id: 5,
     title: "Nivasa Interiors",
     category: "Websites",
     type: "Website Development",
@@ -128,17 +139,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1400&auto=format&fit=crop",
     size: "normal",
   },
-  {
-    id: 5,
-    title: "Roots of Bharat",
-    category: "Video",
-    type: "Brand Film",
-    description:
-      "A cinematic brand film capturing India's culture, craftsmanship, and heritage through compelling visual storytelling.",
-    image:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1400&auto=format&fit=crop",
-    size: "wide",
-  },
+  
   {
     id: 6,
     title: "Indie Echoes",

@@ -17,14 +17,14 @@ export default function App() {
   return (
     <div className="relative">
       <div className="grain-overlay" aria-hidden="true" />
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <main>
         <Hero />
         <About />
         <Services />
         <Portfolio />
-        <FeaturedProject />
+        {/* <FeaturedProject /> */}
         <Clients />
         <Testimonials />
         <Process />

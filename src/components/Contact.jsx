@@ -103,24 +103,7 @@ export default function Contact() {
               </li>
             </ul>
 
-            {/* <div className="mt-8 flex items-center gap-5">
-              {[
-                { Icon: Instagram, label: "Instagram" },
-                { Icon: Youtube, label: "YouTube" },
-                { Icon: Linkedin, label: "LinkedIn" },
-                { Icon: FaXTwitter, label: "Twitter" },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  data-cursor-hover
-                  className="text-white/50 hover:text-gold transition-colors"
-                >
-                  <Icon size={20} />
-                </a>
-              ))}
-            </div> */}
+
             <div className="mt-8 flex items-center gap-5">
               {[
                 {
@@ -128,11 +111,11 @@ export default function Contact() {
                   label: "Instagram",
                   href: "https://www.instagram.com/theartistshouseofficial",
                 },
-                {
-                  Icon: Youtube,
-                  label: "YouTube",
-                  href: "https://youtube.com/@your_channel",
-                },
+                // {
+                //   Icon: Youtube,
+                //   label: "YouTube",
+                //   href: "https://youtube.com/@your_channel",
+                // },
                 {
                   Icon: Linkedin,
                   label: "LinkedIn",

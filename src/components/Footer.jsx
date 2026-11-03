@@ -24,23 +24,7 @@ export default function Footer() {
             <p className="text-white/50 text-sm max-w-xs leading-relaxed">
               Creating stories. Building brands. Shaping experiences.
             </p>
-            {/* <div className="mt-6 flex items-center gap-5">
-              {[
-                { Icon: Instagram, label: "Instagram" },
-                { Icon: Youtube, label: "YouTube" },
-                { Icon: Linkedin, label: "LinkedIn" },
-                { Icon: Facebook, label: "Facebook" },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="text-white/40 hover:text-gold transition-colors"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div> */}
+           
             <div className="mt-8 flex items-center gap-5">
               {[
                 {
@@ -48,11 +32,11 @@ export default function Footer() {
                   label: "Instagram",
                   href: "https://www.instagram.com/theartistshouseofficial",
                 },
-                {
-                  Icon: Youtube,
-                  label: "YouTube",
-                  href: "https://youtube.com/@your_channel",
-                },
+                // {
+                //   Icon: Youtube,
+                //   label: "YouTube",
+                //   href: "https://youtube.com/@your_channel",
+                // },
                 {
                   Icon: Linkedin,
                   label: "LinkedIn",
