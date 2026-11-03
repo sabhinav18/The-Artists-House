@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin, Facebook, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin, Facebook, CheckCircle2, AlertCircle, X } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import SectionTitle from "./SectionTitle.jsx";
 
 const SERVICE_OPTIONS = [
@@ -13,7 +14,7 @@ const SERVICE_OPTIONS = [
   "Other",
 ];
 
-const BUDGET_OPTIONS = ["₹25K – ₹50K", "₹50K – ₹1L", "₹1L – ₹3L", "₹3L+", "Let's Discuss"];
+const BUDGET_OPTIONS = ["₹10K – ₹25K","₹25K – ₹50K", "₹50K – ₹1L", "₹1L – ₹3L", "₹3L+", "Let's Discuss"];
 
 const initialState = {
   name: "",
@@ -74,7 +75,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-5 gap-16">
         <div className="lg:col-span-2">
           <SectionTitle
-            number="07"
+            // number="07"
             label="Contact"
             title="Let's create something extraordinary."
             subtitle="Have an idea? Let's turn it into something people remember."
@@ -85,33 +86,69 @@ export default function Contact() {
             <ul className="space-y-4 text-white/70 text-sm">
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-gold" aria-hidden="true" />
-                <a href="mailto:hello@theartisthouse.com" className="hover:text-gold transition-colors">
-                  hello@theartisthouse.com
+                <a href="mailto:@support.theartistshouse.in" className="hover:text-gold transition-colors">
+                  @support.theartistshouse.in
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-gold" aria-hidden="true" />
-                <span>+91 81716 75175</span>
+                <span>+91 63954 10391</span>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin size={18} className="text-gold" aria-hidden="true" />
                 {/* <span>India</span> */}
                 <span>
-                  3rd Floor, Studio Block, Bandra West <br /> Mumbai 400050, India
+                  E- 100, Malad West,  <br /> Mumbai  400064, India
                 </span>
               </li>
             </ul>
 
-            <div className="mt-8 flex items-center gap-5">
+            {/* <div className="mt-8 flex items-center gap-5">
               {[
                 { Icon: Instagram, label: "Instagram" },
                 { Icon: Youtube, label: "YouTube" },
                 { Icon: Linkedin, label: "LinkedIn" },
-                { Icon: Facebook, label: "Facebook" },
+                { Icon: FaXTwitter, label: "Twitter" },
               ].map(({ Icon, label }) => (
                 <a
                   key={label}
                   href="#"
+                  aria-label={label}
+                  data-cursor-hover
+                  className="text-white/50 hover:text-gold transition-colors"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
+            </div> */}
+            <div className="mt-8 flex items-center gap-5">
+              {[
+                {
+                  Icon: Instagram,
+                  label: "Instagram",
+                  href: "https://www.instagram.com/theartistshouseofficial",
+                },
+                {
+                  Icon: Youtube,
+                  label: "YouTube",
+                  href: "https://youtube.com/@your_channel",
+                },
+                {
+                  Icon: Linkedin,
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/the-artists-house-046492448/",
+                },
+                {
+                  Icon: FaXTwitter,
+                  label: "X",
+                  href: "https://x.com/_artistshouse_",
+                },
+              ].map(({ Icon, label, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   data-cursor-hover
                   className="text-white/50 hover:text-gold transition-colors"

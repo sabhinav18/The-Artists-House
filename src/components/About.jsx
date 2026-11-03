@@ -27,10 +27,10 @@ function Counter({ to, suffix = "" }) {
 }
 
 const stats = [
-  { value: 50, suffix: "+", label: "Projects" },
-  { value: 25, suffix: "+", label: "Creative Partners" },
-  { value: 10, suffix: "+", label: "Services" },
-  { value: 100, suffix: "%", label: "Passion" },
+  { value: 22, suffix: "+", label: "Projects" },
+  { value: 9, suffix: "+", label: "Creative Partners" },
+  { value: 7, suffix: "+", label: "Services" },
+  // { value: 100, suffix: "%", label: "Passion" },
 ];
 
 export default function About() {

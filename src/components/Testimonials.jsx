@@ -18,7 +18,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="relative py-28 md:py-36 bg-black-soft">
       <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">
-        <SectionTitle number="05" label="Testimonials" title="What they say" align="center" />
+        <SectionTitle  label="Testimonials" title="What they say" align="center" />
 
         <div className="relative mt-16 min-h-[260px] flex flex-col items-center justify-center">
           <Quote className="text-gold/40 mb-6" size={36} aria-hidden="true" />
@@ -36,12 +36,12 @@ export default function Testimonials() {
                 "{current.quote}"
               </p>
               <div className="mt-8 flex items-center justify-center gap-3">
-                <img
+                {/* <img
                   src={current.image}
                   alt=""
                   className="w-11 h-11 rounded-full object-cover border border-gold/40"
                   loading="lazy"
-                />
+                /> */}
                 <div className="text-left">
                   <p className="text-white text-sm font-semibold">{current.name}</p>
                   <p className="text-white/50 text-xs">{current.role}</p>

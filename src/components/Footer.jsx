@@ -1,5 +1,7 @@
 import React from "react";
 import { Instagram, Youtube, Linkedin, Facebook } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -22,7 +24,7 @@ export default function Footer() {
             <p className="text-white/50 text-sm max-w-xs leading-relaxed">
               Creating stories. Building brands. Shaping experiences.
             </p>
-            <div className="mt-6 flex items-center gap-5">
+            {/* <div className="mt-6 flex items-center gap-5">
               {[
                 { Icon: Instagram, label: "Instagram" },
                 { Icon: Youtube, label: "YouTube" },
@@ -36,6 +38,42 @@ export default function Footer() {
                   className="text-white/40 hover:text-gold transition-colors"
                 >
                   <Icon size={18} />
+                </a>
+              ))}
+            </div> */}
+            <div className="mt-8 flex items-center gap-5">
+              {[
+                {
+                  Icon: Instagram,
+                  label: "Instagram",
+                  href: "https://www.instagram.com/theartistshouseofficial",
+                },
+                {
+                  Icon: Youtube,
+                  label: "YouTube",
+                  href: "https://youtube.com/@your_channel",
+                },
+                {
+                  Icon: Linkedin,
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/the-artists-house-046492448/",
+                },
+                {
+                  Icon: FaXTwitter,
+                  label: "X",
+                  href: "https://x.com/_artistshouse_",
+                },
+              ].map(({ Icon, label, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  data-cursor-hover
+                  className="text-white/50 hover:text-gold transition-colors"
+                >
+                  <Icon size={20} />
                 </a>
               ))}
             </div>

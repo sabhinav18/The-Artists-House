@@ -5,7 +5,7 @@ import { MessageCircle } from "lucide-react";
 export default function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/918171675175"
+      href="https://wa.me/916395410391"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"

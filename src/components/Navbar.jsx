@@ -54,7 +54,7 @@ export default function Navbar() {
           className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-5"
           aria-label="Primary"
         >
-          <a href="#home" className="flex items-center gap-2 group" data-cursor-hover>
+          {/* <a href="#home" className="flex items-center gap-2 group" data-cursor-hover>
             <span className="w-1.5 h-1.5 rounded-full bg-gold hidden sm:inline-block" aria-hidden="true" />
             <span className="font-display leading-none">
               <span className="block text-[10px] tracking-[0.35em] text-white/60">THE</span>
@@ -62,6 +62,18 @@ export default function Navbar() {
                 ARTISTS HOUSE
               </span>
             </span>
+          </a> */}
+
+          <a
+            href="#home"
+            className="flex items-center shrink-0 group"
+            data-cursor-hover
+          >
+            <img
+              src="/logo.png"
+              alt="The Artists House"
+              className="h-16 w-16 md:h-[72px] md:w-[72px] object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
 
           <ul className="hidden lg:flex items-center gap-8">

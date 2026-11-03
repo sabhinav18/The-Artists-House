@@ -29,7 +29,7 @@ export default function Process() {
   return (
     <section className="relative py-28 md:py-36 bg-black">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <SectionTitle number="06" label="Process" title="From idea to impact" />
+        <SectionTitle  label="Process" title="From idea to impact" />
 
         <div className="mt-20 relative">
           <div className="hidden md:block absolute top-6 left-0 right-0 h-px bg-white/10" aria-hidden="true" />

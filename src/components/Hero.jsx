@@ -117,11 +117,13 @@ const heroImages = [
   {
     image:
       "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2200&auto=format&fit=crop",
+      
     service: "Branding",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2200&auto=format&fit=crop",
+      // "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1600&auto=format&fit=crop",
     service: "Social Media",
   },
   {
